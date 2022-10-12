@@ -56,7 +56,7 @@ git clone --depth 1 https://github.com/samsaadhanii/scl.git "$SCL_MAIN_DIR"
 
 cat "$SCL_MAIN_DIR/SPEC/spec_users.txt" \
 | sed -E \
-    -e "s|^(ZENDIR=).*$|\1$ZEN_MAIN_DIR|" \
+    -e "s|^(ZENDIR=).*$|\1$ZEN_MAIN_DIR/zen/ML|" \
     -e "s|^(SCLINSTALLDIR=).*$|\1$SCL_MAIN_DIR|" \
 > "$SCL_MAIN_DIR/spec.txt"
 
