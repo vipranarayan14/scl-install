@@ -9,22 +9,22 @@ SCL_MAIN_DIR="$MAIN_DIR/scl"
 echo -e "\n=== Updating system packages ===\n"
 
 
-# Update system package repositories and packages:
-sudo apt update && sudo apt upgrade
+# Update system package repositories and packages
+sudo apt update
 
 
 echo -e "\n=== Installing prerequisites ===\n"
 
 
-# Install prerequisite system packages:
-sudo apt install \
+# Install prerequisite system packages
+sudo apt install -y \
 apache2 \
 bash \
 bison \
-camlp4
+camlp4 \
 default-jdk \
 flex \
-g++ \ 
+g++ \
 gcc \
 git \
 graphviz \
@@ -33,12 +33,13 @@ make \
 ocaml \
 ocamlbuild \
 perl \
-python2 \
 python3-pip \
-xsltproc \
+python3-pandas \
+python3-openpyxl \
+xsltproc
 
-# Install prerequisite python packages:
-sudo pip3 install pandas openpyxl anytree devtrans
+# Install prerequisite python packages
+sudo pip3 install anytree
 
 
 echo -e "\n=== Downloading SCL & Dependencies ===\n"
