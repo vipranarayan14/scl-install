@@ -21,18 +21,21 @@ sudo apt install \
 apache2 \
 bash \
 bison \
+camlp4
+default-jdk \
 flex \
-graphviz \
+g++ \ 
 gcc \
+git \
+graphviz \
 lttoolbox \
 make \
+ocaml \
+ocamlbuild \
 perl \
+python2 \
 python3-pip \
 xsltproc \
-default-jdk \
-g++ ocaml \
-ocamlbuild \
-camlp4
 
 # Install prerequisite python packages:
 sudo pip3 install pandas openpyxl anytree devtrans
