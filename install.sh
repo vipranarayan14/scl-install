@@ -36,7 +36,7 @@ perl \
 python3-pip \
 python3-pandas \
 python3-openpyxl \
-xsltproc
+xsltproc \
 
 # Install prerequisite python packages
 sudo pip3 install anytree
