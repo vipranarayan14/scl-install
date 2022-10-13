@@ -27,7 +27,6 @@ gcc \
 lttoolbox \
 make \
 perl \
-python \
 python3-pip \
 xsltproc \
 default-jdk \
